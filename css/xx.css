@@ -1,0 +1,136 @@
+#zhu{
+	width: 750px;
+	height: 1400px;
+	background: whitesmoke;
+	position: relative;
+	/*display: none;*/
+}
+.shang{
+	width: 750px;
+	height: 100px;
+	position: fixed;
+	background: white;
+	z-index: 999;
+	border-bottom: 1px solid darkgray;
+}
+.shang>p{
+	font-size: 40px;
+	color: black;
+	position: absolute;
+	left: 30px;
+	top: -10px;
+}
+.shang>a>img{
+	width: 50px;
+	position: absolute;
+	right: 30px;
+	top: 25px;
+}
+.xx{
+	width: 750px;
+	height: 100%;
+	background: white;
+	/*background: aqua;*/
+}
+.xx>ul{
+	position: absolute;
+	top: 100px;
+	width: 720px;
+	height: 100%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	background-position: 10px 25px;
+	background-size: 20%;
+	background-image: url(../img/xx/xx.png);
+	background-repeat: no-repeat;
+}
+.xx>ul li{
+	width: 720px;
+	height: 150px;
+	/*background: aqua;*/
+	/*margin-top: 1px;*/
+	/*opacity: 0.4;*/
+	border-bottom: 1px solid whitesmoke;
+}
+.xx>ul li>p{
+	position: absolute;
+	font-size: 30px;
+	left: 150px;
+}
+.txl{
+	width: 750px;
+	height: 1334px;
+	background: whitesmoke;
+	position: absolute;
+	top: 0;
+	left: auto;
+	display: none;
+}
+.txl>div:nth-child(2){
+	margin-bottom: 10px;
+}
+.txl>div:nth-child(4){
+	margin-bottom: 10px;
+}
+.txl_shang{
+	width: 750px;
+	height: 110px;
+	background: white;
+	position: fixed;
+	z-index: 666;
+	border-bottom: 1px solid darkgray;
+}
+.txl_shang>img{
+	width: 50px;
+	position: absolute;
+	margin: 25px;
+}
+.txl_shang>p{
+	font-size: 40px;
+	line-height: 30px;
+	text-align: center;
+}
+.txl_gn1{
+	width: 750px;
+	height: 152px;
+	background: white;
+	position: relative;
+	top: 100px;
+}
+.txl_gn{
+	width: 700px;
+	height: 150px;
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.txl_tx{
+	position: absolute;
+	width: 90px;
+	margin: 30px 30px;
+	border-radius: 360px;
+}
+.txl_xx{
+	position: absolute;
+	width: 50px;
+	top: 50px;
+	right: 20px;
+}
+.txl_gn>p{
+	font-size: 30px;
+	position: absolute;
+	left: 150px;
+	top: 10px;
+}
+.txl_gn>span{
+	position: absolute;
+	top: 80px;
+	left: 150px;
+	font-size: 24px;
+	color: darkgray;
+}
+.dd{
+	border-bottom: 1px solid darkgray;
+}

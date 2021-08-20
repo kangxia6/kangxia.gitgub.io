@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="device=device-width,initial-scale=0.5, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/zhu.css" />
+		<link rel="stylesheet" type="text/css" href="css/dxq.css"/>
+	</head>
+
+	<body>
+		<div id="zhu">
+			<div class="shang_a">
+				<p class="bx1">
+					本校
+					<div class="xiahua1">
+						
+					</div>
+				</p>
+				<p class="gz1">关注</p>
+			</div>
+			<div class="dh">
+					<ul>
+						<li v-for="a in dh">
+							<a :href="a.href">
+								<img :src="a.src"/>
+							</a>
+							<p :style="a.style">{{a.txt}}</p>
+						</li>
+					</ul>
+			</div>
+			<div class="jia"></div>
+			<div class="ht">
+				<div class="ht_s">
+					<img src="img/dxq/S10630-14324407.png"/>
+					<p>更多</p>
+				</div>
+				<ul class="ht_wb">
+					<li v-for="b in ht">
+						<a href="#">{{b.nr}}</a>
+					</li>
+				</ul>
+			</div>
+			<div  v-for="(c,index) in nr">
+				<div :class="c.class" :style="c.style">
+					<div class="xx">
+						<img class="tx" :src="c.scr"/>
+						<p>{{c.name}}</p>
+						<img class="fx" id="fx" src="img/dxq/分享.png"/>
+					</div>
+					<div class="wb">
+						<p>{{c.wb}}</p>
+						<img :src="c.img"/>
+					</div>
+					<div class="sl">
+						<img class="xfx" src="img/dxq/分享，转发.png"/>
+						<img class="pl" src="img/dxq/消息.png"/>
+						<img class="dz" :id="'dz'+index" src="img/dxq/点赞.png"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="dxq_fx">
+			<div class="dxq_shang">
+				<img class="fh" src="img/wd/返回.png"/>
+				<p>发动态</p>
+				<div class="fb">发布</div>
+			</div>
+			<div class="fx_nr">
+				<textarea id="expInput"placeholder="记录你此刻的心情~"/></textarea>
+				<img class="t1" src="img/dxq/图片.png"/>
+				<img class="t2" src="img/dxq/艾特.png"/>
+				<img class="t3" src="img/dxq/链接.png"/>
+			</div>
+			<div class="fx_wz">
+				<p>所在位置</p>
+			</div>
+			<input id="ty" type="checkbox"><p>已同意</p><a class="gf" href="#">《今日校园内容管理规范》</a>
+		</div>
+		<div class="waizhi">
+			<div class="fx_ck">
+				<ul>
+					<li v-for="fx in ck">{{fx.wz}}</li>
+				</ul>
+			</div>
+			<div class="fx_ck1">
+				<ul>
+					<li v-for="fx1 in ckk">
+						<img :src="fx1.img"/>
+						{{fx1.wz}}
+					</li>
+				</ul>
+				<div class="qx">
+					取消
+				</div>
+			</div>
+		</div>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/dxq.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/dz.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

@@ -1,0 +1,332 @@
+#zhu{
+	height: 2000px;
+}
+.shang{
+	height: 700px;
+	background: white;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.shang_a{
+	width: 750px;
+	height: 100px;
+	background: white;
+	position: fixed;
+	z-index: 999;
+}
+
+.shang_a>p{
+	top: -10px;
+	left: 30px;
+	font-size: 40px;
+	position: absolute;
+}
+.ys{
+	top: 0;
+	height: 100px;
+	width: 240px;
+	/*background: seagreen;*/
+	right: 0px;
+	position: absolute;
+}
+.ys>img{
+	width: 60px;
+	height: 60px;
+}
+.ys>img:nth-child(1){
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.ys>img:nth-child(2){
+	position: absolute;
+	top: 20px;
+	right: 30px;
+}
+
+.shang_c{
+	width: 750px;
+	height: 270px;
+	/*background: saddlebrown;*/
+	position: absolute;
+	top: 400px;
+}
+
+.shang_c>ul>li>a>img{
+	width: 100px;
+	height: 100px;
+	position: relative;
+	left: 5px;
+}
+.shang_c>ul>li>p{
+	position: relative;
+	font-size: 20px;
+	text-align: center;
+	bottom: 15px;
+}
+.shang_c>ul{
+	width: 700px;
+	margin-left: 24px;
+}
+.shang_c>ul>li{
+	width: 100px;
+	height: 120px;
+	margin: 10px 20px;
+	float: left;
+	/*background: salmon;*/
+}
+
+.zhong{
+	width: 750px;
+	height: 430px;
+	background: white;
+	margin-top: 10px;
+	border-radius: 20px;
+}
+.wz1{
+	width: 750px;
+	height: 100px;
+	/*background: saddlebrown;*/
+}
+.wz1>p{
+	font-size: 30px;
+	left: 50px;
+	position: absolute;
+}
+.wz2{
+	width: 100px;
+	height: 30px;
+	/*background: aqua;*/
+	position: absolute;
+	top: 745px;
+	right: 30px;
+}
+.wz2>a{
+	font-size: 25px;
+	text-decoration:none;
+	color: #000000;
+}
+.wz2>a>img{
+	widows: 30px;
+	height: 30px;
+	position: absolute;
+	top: 1px;
+	margin-left: 5px;
+}
+.nr{
+	width: 680px;
+	height: 300px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	/*background: lightblue;*/
+}
+.nr>ul li{
+	width: 200px;
+	height: 300px;
+	/*background: salmon;*/
+	float: left;
+	margin-left: 20px;
+}
+.nr>ul li>img{
+	width: 180px;
+	height: 180px;
+	margin: 9px;
+}
+.nr>ul li>p{
+	position: relative;
+	top: -36px;
+	left: 13px;
+	font-size: 26px;
+	color: white;
+}
+.nr>ul li>span{
+	position: relative;
+	top: -60px;
+	left: 10px;
+	font-size: 24px;
+	color: white;
+}
+.zs{
+	background: hotpink;
+}
+.ls{
+	background: lightblue;
+}
+.cs{
+	background: salmon;
+}
+.zs,.ls,.cs{
+	border-radius: 20px;
+}
+.xia{
+	width: 750px;
+	height: 100%;
+	background: white;
+	margin-top: 10px;
+	border-radius: 20px;
+}
+
+
+#lunbo {
+	top: 115px;
+	width: 650px;
+	height: 270px;
+	left: 50px;
+	margin: 0 auto;
+	position: absolute;
+}
+#lunbo ul>li>img{
+	width: 650px;
+	height: 270px;
+}
+#lunbo ul {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#lunbo ul li {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#lunbo #left {
+	width: 42px;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	cursor: pointer;
+}
+
+#lunbo #right {
+	width: 42px;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+}
+
+#lunbo #left a {
+	width: 42px;
+	height: 69px;
+	display: inline-block;
+	background: url(icon-slides.png) -84px 0 no-repeat;
+	margin-top: 176px;
+}
+
+#lunbo #left:hover a {
+	background: url(icon-slides.png) 0 0 no-repeat;
+}
+
+#lunbo #right a {
+	width: 42px;
+	height: 69px;
+	display: inline-block;
+	background: url(icon-slides.png) -126px 0 no-repeat;
+	margin-top: 176px;
+}
+
+#lunbo #right:hover a {
+	background: url(icon-slides.png) -42px 0 no-repeat;
+}
+
+#num {
+	height: 20px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#num span {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: #000000;
+	filter: alpha(Opacity=80);
+	-moz-opacity: 0.8;
+	opacity: 0.8;
+	color: white;
+	font-weight: bold;
+	line-height: 20px;
+	text-align: center;
+	border-radius: 10px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.znr{
+	width: 750px;
+	height: 500px;
+	position: relative;
+	/*background: white;*/
+	margin-top: 10px;
+}
+
+.xx{
+	width: 750px;
+	height: 100px;
+	/*background: aqua;*/
+}
+.xx>p{
+	font-size: 30px;
+	position: absolute;
+	left: 120px;
+}
+.tx{
+	width: 90px;
+	border-radius: 360px;
+	position: absolute;
+	top: 5px;
+	left: 20px;
+}
+.fx{
+	width: 50px;
+	position: absolute;
+	top: 30px;
+	right: 40px;
+}
+.wb{
+	width: 700px;
+	height: 300px;
+	position: absolute;
+	left: 0px;
+	right: 0;
+	margin: 0 auto;
+	/*background: sandybrown;*/
+}
+.wb>p{
+	font-size: 30px;
+}
+.wb>img{
+	width: 300px;
+	height: 200px;
+}
+.sl{
+	width: 750px;
+	height: 100px;
+	/*background: aqua;*/
+}
+.sl>img{
+	width: 50px;
+	opacity: 0.7;
+	bottom: 20px;
+	position: absolute;
+}
+.xfx{
+	left: 50px;
+}
+.pl{
+	left: 350px;
+}
+.dz{
+	right: 50px;
+}

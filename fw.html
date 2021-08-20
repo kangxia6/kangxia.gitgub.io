@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="device=device-width,initial-scale=0.5, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/zhu.css" />
+		<link rel="stylesheet" type="text/css" href="css/fw.css"/>
+	</head>
+
+	<body>
+		<div id="zhu">
+			<div class="shang_a">
+					<p>长沙商贸旅游职业技术学院</p>
+					<div class="ys">
+						<img src="img/fw/搜索.png" />
+					</div>
+				</div>
+			<div class="dh">
+					<ul>
+						<li v-for="a in dh">
+							<a :href="a.href">
+								<img :src="a.src"/>
+							</a>
+							<p :style="a.style">{{a.txt}}</p>
+						</li>
+					</ul>
+			</div>
+			<div class="gs">
+				<p><img src="img/fw/公告.png"/>该板块内容均由学校官方提供</p>
+				<img class="sc" src="img/fw/删除.png"/>
+			</div>
+			<div class="tu">
+				<img src="img/fw/aa.png"/>
+			</div>
+			<div class="qb">
+				<div class="qb_s">
+					<p>全部服务</p>
+					<img src="img/fw/全部.png"/>
+				</div>
+				<div class="qb_nr">
+					<ul>
+						<li v-for="b in fw">{{b.atxt}}</li>
+					</ul>
+				</div>
+				<div v-for="c in nr">
+					<div :class="c.class">
+						<div class="w_s">
+							<p>{{c.wb}}</p>
+							<a href="#">{{c.bj}}</a>
+						</div>
+						<div class="w_gn">
+							<ul>
+								<li v-for="d in c.gn">
+									<a :href="d.href">
+										<img :src="d.src" />
+									</a>
+									<p>{{d.txt}}</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/fu.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

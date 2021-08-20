@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="device=device-width,initial-scale=0.5, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/wd.css"/>
+		<link rel="stylesheet" type="text/css" href="css/zhu.css"/>
+	</head>
+	<body>
+		<div id="zhu">
+			<div class="dh">
+					<ul>
+						<li v-for="a in dh">
+							<a :href="a.href">
+								<img :src="a.src"/>
+							</a>
+							<p :style="a.style">{{a.txt}}</p>
+						</li>
+					</ul>
+			</div>
+			<div class="shang">
+				<div class="shang_a">
+					<a class="sz" href="#"><img src="img/wd/IMG_20210628_153547.png"/></a>
+					<a class="rwm" href="#"><img src="img/wd/IMG_20210628_153557.png"/></a>
+				</div>
+				<div class="gr">
+					<img src="img/wd/tx.jpg"/>
+					<p>梁合顺,谢玉纯</p>
+					<div class="dj">LV.99</div>
+					<div class="jb">今币&nbsp;&nbsp;999万</div>
+					<div class="zy">
+						<a href="#">
+							<img src="img/wd/时钟.png"/>
+						主页>
+						</a>
+					</div>
+				</div>
+				<img src="img/wd/bj.png"/>
+				<div class="sj">
+					<ul>
+						<li v-for="b in sj">
+							<p>{{b.atxt}}</p>
+							<span>{{b.btxt}}</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="gn">
+				<ul>
+					<li v-for="c in gn">
+						<a href="#">{{c.atxt}}</a>
+					</li>
+				</ul>
+			</div>
+			<div class="kb">
+				<div class="bt">
+					<p>周二课表</p>
+					<span>6月29日</span>
+				</div>
+				<div class="bt_nr">
+					<div class="nr_a">
+						<p>快来生成你的专属课表吧<br /><br />立即尝试</p>
+						<div class="yj"><a href="#">一键生成课表</a></div>
+					</div>
+					<div class="nr_b">
+						<img src="img/wd/shu.png"/>
+					</div>
+				</div>
+			</div>
+			<div class="quan">
+				<p>更多服务</p>
+				<ul>
+					<li v-for="d in fw">
+						<a :class="d.class">
+							{{d.atxt}}
+						</a>
+					</li>
+				</ul>
+			</div>
+				
+		</div>
+		<div class="wd_rwm">
+				<div class="rwm_s">
+					<p>我的二维码</p>
+					<a class="tc">
+						<img src="img/wd/返回.png"/>
+					</a>
+				</div>
+				<div class="zyd">
+					<div class="tx"></div>
+					<p>梁合顺，谢玉纯</p>
+					<span>软件学院</span>
+					<div class="id">ID:6666666</div>
+					<img src="img/wd/ma.png"/>
+				</div>
+			</div>
+			<div class="xt">
+				<div class="xt_top">
+					<img class="ffh" src="img/wd/返回.png"/>
+					<p>系统设置</p>
+				</div>
+				<div v-for="i in lb">
+					<div :class="i.class":style="i.style">
+					<ul>
+						<li v-for="e in i.sz">
+							{{e.name}}
+							<img src="img/wd/a.png"/>
+						</li>
+					</ul>
+				</div>
+				</div>
+				<div class="tt">
+					退出当前登录
+				</div>
+			</div>
+			<div class="llq">
+				<div class="fhh">
+					<img class="llq_fh" src="img/wd/返回.png"/>
+				</div>
+				<iframe class="ck" src="#" frameborder="0" scrolling="0"></iframe>
+			</div>
+			<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+			<script src="js/wd.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="device=device-width,initial-scale=0.5, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/zhu.css" />
+	</head>
+
+	<body>
+		<div id="zhu">
+			<!--顶部-->
+			<div class="shang_a">
+					<p>长沙商贸旅游职业技术...</p>
+					<div class="ys">
+						<img src="img/jx/a/IMG_20210628_104444.png" />
+						<img src="img/jx/a/IMG_20210628_104422.png" />
+					</div>
+				</div>
+				<!--导航-->
+			<div class="dh">
+					<ul>
+						<li v-for="a in dh">
+							<a :href="a.href">
+								<img :src="a.src"/>
+							</a>
+							<p :style="a.style">{{a.txt}}</p>
+						</li>
+					</ul>
+			</div>
+			<div class="shang">
+				<!--轮播图-->
+				<div id="lunbo">
+					<ul>
+						<li v-for="b in lb">
+							<img :src="b.src">
+						</li>
+					</ul>
+					<div id="left" onclick="prev()">
+						<a href="javascript:"></a>
+					</div>
+					<div id="right" onclick="next()">
+						<a href="javascript:"></a>
+					</div>
+					<p id="num">
+						<span class="current">1</span>
+						<span>2</span>
+						<span>3</span>
+					</p>
+				</div>
+				<div class="shang_c">
+					<ul>
+						<li v-for="c in gn">
+							<a :href="c.href">
+								<img :src="c.src" />
+							</a>
+							<p>{{c.txt}}</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--建党100周年活动-->
+			<div class="zhong">
+				<div class="wz1">
+					<p>庆祝建党100周年</p>
+					<div class="wz2">
+						<a href="#">
+						更多
+							<img src="img/jx/a/gd.png"/>
+						</a>
+					</div>
+				</div>
+				<div class="nr">
+					<ul v-for="d in nr">
+						<li :class="d.class">
+							<img :src="d.scr"/>
+							<p>{{d.atxt}}</p>
+							<span>
+								{{d.btxt}}
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="xia">
+				<div  v-for="c in znr">
+					<div :class="c.class" :style="c.style">
+						<div class="xx">
+							<img class="tx" :src="c.scr"/>
+							<p>{{c.name}}</p>
+							<img class="fx" src="img/dxq/分享.png"/>
+						</div>
+						<div class="wb">
+							<p>{{c.wb}}</p>
+							<img :src="c.img"/>
+						</div>
+						<div class="sl">
+							<img class="xfx" src="img/dxq/分享，转发.png"/>
+							<img class="pl" src="img/dxq/消息.png"/>
+							<img class="dz" src="img/dxq/点赞.png"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="waizhi">
+			<div class="fx_ck">
+				<ul>
+					<li v-for="fx in ck">{{fx.wz}}</li>
+				</ul>
+			</div>
+			<div class="fx_ck1">
+				<ul>
+					<li v-for="fx1 in ckk">
+						<img :src="fx1.img"/>
+						{{fx1.wz}}
+					</li>
+				</ul>
+				<div class="qx">
+					取消
+				</div>
+			</div>
+		</div>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/dz.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

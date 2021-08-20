@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="device=device-width,initial-scale=0.5, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/zhu.css" />
+		<link rel="stylesheet" type="text/css" href="css/xx.css"/>
+	</head>
+
+	<body>
+		<div id="zhu">
+			<div class="dh">
+					<ul>
+						<li v-for="a in dh">
+							<a :href="a.href">
+								<img :src="a.src"/>
+							</a>
+							<p :style="a.style">{{a.txt}}</p>
+						</li>
+					</ul>
+			</div>
+			<div class="shang">
+				<p>消息</p>
+				<a href="#">
+					<img class="txl_rk" src="img/xx/tj.png"/>
+				</a>
+			</div>
+			<div class="xx">
+				<ul>
+					<li v-for="b in xx">
+						<p>{{b.atxt}}</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="txl">
+			<div class="txl_shang">
+				<img class="fh" src="img/wd/返回.png"/>
+				<p>通讯录</p>
+			</div>
+			<div class="txl_gn1" v-for="c in txl">
+				<div :class="c.aa" :style="c.style">
+					<img class="txl_tx" :src="c.img"/>
+						<p>{{c.name}}</p>
+						<span>{{c.wb}}</span>
+					<img class="txl_xx" :src="c.xx"/>
+				</div>
+			</div>
+		</div>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/xx.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

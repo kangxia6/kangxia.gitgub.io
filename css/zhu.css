@@ -1,0 +1,138 @@
+body,div,ul,li {
+	margin: 0;
+	padding: 0;
+	font-family: "楷体";
+}
+ul,li {
+	list-style: none;
+}
+#zhu{
+	width: 750px;
+	background: whitesmoke;
+	position: relative;
+}
+.dh{
+	width: 750px;
+	height: 100px;
+	position: fixed;
+	bottom: 0;
+	background: white;
+	z-index: 999;
+}
+.dh>ul{
+	height: 100px;
+	width: 700px;
+	/*background: darkblue;*/
+	margin-left: 50px;
+}
+.dh>ul li{
+	width: 90px;
+	height: 100px;
+	/*background: aqua;*/
+	float: left;
+	margin-right: 50px;
+}
+.dh>ul li>a>img{
+	width: 50px;
+	height: 50px;
+	position: relative;
+	top: 15px;
+	left: 22px;
+}
+.dh>ul li>p{
+	font-size: 20px;
+	position: relative;
+	top: -5px;
+	text-align: center;
+}
+/*.fx_ck{
+	display: none;
+}*/
+.fx_ck,.fx_ck1{
+	width: 750px;
+	height: 1334px;
+	background: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	z-index: 99999;
+	display: none;
+}
+.fx_ck>ul{
+	width: 700px;
+	height: 370px;
+	/*background: forestgreen;*/
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	bottom: 0;
+	z-index: 999999;
+}
+.fx_ck>ul li{
+	width: 700px;
+	height: 100px;
+	background: white;
+	font-size: 40px;
+	color: royalblue;
+	text-align: center;
+	line-height: 100px;
+}
+.fx_ck>ul li:nth-child(1){
+	height: 50px;
+	color: darkgray;
+	font-size: 26px;
+	line-height: 50px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.fx_ck>ul li:nth-child(2){
+	border-top: 1px solid darkgray;
+	border-bottom: 1px solid darkgray;
+}
+.fx_ck>ul li:nth-child(3){
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.fx_ck>ul li:nth-child(4){
+	margin-top: 10px;
+	border-radius: 10px;
+}
+.qx{
+	width: 750px;
+	height: 90px;
+	bottom: 0;
+	font-size: 40px;
+	text-align: center;
+	line-height: 90px;
+	background: white;
+	position: absolute;
+}
+.fx_ck1>ul{
+	width: 750px;
+	height: 240px;
+	background: whitesmoke;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	bottom: 90px;
+	z-index: 999999;
+}
+.fx_ck1>ul li{
+	width: 80px;
+	height: 75px;
+	/*background: saddlebrown;*/
+	float: left;
+	margin: 20px 30px;
+	position: relative;
+	color: darkgray;
+	text-align: center;
+	line-height: 130px;
+}
+.fx_ck1>ul li>img{
+	width: 50px;
+	left: 0px;
+	right: 0;
+	margin: 0 auto;
+	position: absolute;
+}
